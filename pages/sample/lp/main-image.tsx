@@ -13,7 +13,7 @@ export default function MainImage() {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  });
+  }, [handleScroll]);
 
   return (
     <div className={styles.container}>
